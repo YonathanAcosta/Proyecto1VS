@@ -44,5 +44,14 @@ internal class Program
         D = int.Parse(Console.ReadLine());
         DIFERENCIA=((A*B)-(C*D));
         Console.WriteLine("DIFERENCA = " + DIFERENCIA);
+        //Ejericio Salario
+        Console.WriteLine("Ejercicio Salario ");
+        int numEm, Horas = 0;
+        double Sal = 0;
+        numEm = int.Parse(Console.ReadLine());
+        Horas = int.Parse(Console.ReadLine());
+        Sal = double.Parse(Console.ReadLine());
+        Console.WriteLine("NUMBER = " + numEm + "\n" + "SALARY = U$ " + ((Horas * Sal)).ToString("0.00"));
+
     }
 }
