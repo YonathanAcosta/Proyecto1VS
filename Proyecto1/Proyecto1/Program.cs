@@ -11,8 +11,8 @@ internal class Program
 
         double r = Math.Round(double.Parse(Console.ReadLine()),2);
         Console.WriteLine(String.Format( "{0:0.00}", r));
-        double A = (pi * (r * r));
-        Console.WriteLine("A=" + Math.Round(A,4));
+        double Area = (pi * (r * r));
+        Console.WriteLine("A=" + Math.Round(Area,4));
         
         // correcion
         //Ejercicio Radio
@@ -37,11 +37,12 @@ internal class Program
         N3= Convert.ToDouble(Console.ReadLine());
         Console.WriteLine("MEDIA = " + ((N1 * 2 + N2 * 3+ N3*5) / (10)).ToString("0.0"));
         //ejercicio Diferencia
-        int V1, V2, V3, V4;
-        V1 = int.Parse(Console.ReadLine());
-        V2 = int.Parse(Console.ReadLine());
-        V3 = int.Parse(Console.ReadLine());
-        V4 = int.Parse(Console.ReadLine());
-        Console.WriteLine("DIFERENCIA = " + ((V1 * V2) - (V3 * V4)));
+        int A, B, C, D,DIFERENCIA;
+        A = int.Parse(Console.ReadLine());
+        B = int.Parse(Console.ReadLine());
+        C = int.Parse(Console.ReadLine());
+        D = int.Parse(Console.ReadLine());
+        DIFERENCIA=((A*B)-(C*D));
+        Console.WriteLine("DIFERENCA = " + DIFERENCIA);
     }
 }
