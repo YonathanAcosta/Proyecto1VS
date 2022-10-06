@@ -59,17 +59,17 @@ internal class Program
         salario = double.Parse(Console.ReadLine());
         valorVen = double.Parse(Console.ReadLine());
         Console.WriteLine("TOTAL = R$ " + (salario + (valorVen * 0.15)).ToString("0.00"));
-        */
-        // ejercicio Calculo
+        
+         // ejercicio Calculo
         Console.WriteLine("Ejercicio Calculo");
         int codp1, codp2, can1, can2; double valor1, valor2, total; 
 
-        String[] cadena1 = Console.ReadLine().Split(char.Parse(" "));
+        String[] cadena1 = Console.ReadLine().Split(' ');
         codp1 = int.Parse(cadena1[0]);
         can1 = int.Parse(cadena1[1]);
         valor1 = double.Parse(cadena1[2]);
 
-        String [] cadena2 = Console.ReadLine().Split(char.Parse(" "));
+        String [] cadena2 = Console.ReadLine().Split(' ');
         codp2 = int.Parse(cadena2[0]);
         can2 = int.Parse(cadena2[1]);
         valor2 = double.Parse(cadena2[2]);
@@ -83,6 +83,64 @@ internal class Program
         
 
         Console.WriteLine("VALOR A PAGAR: R$ " + total.ToString("0.00"));
+         
+         
+         Console.WriteLine("Ejercicio Esfera ");
+        double pi = 3.14159;
+        int r = int.Parse(Console.ReadLine());
+        double div = 4.0 / 3;
+        double resul = div * (pi * (Math.Pow(r, 3)));
+        Console.WriteLine("VOLUME = " + resul.ToString("0.000"));
+
+         
+          //ejercicio ESFERA
+        double a, b, c, pi, triangulo, circulo, trapezio, cuadrado, rectangulo;
+        pi = 3.14159;
+        a = double.Parse(Console.ReadLine());
+        b = double.Parse(Console.ReadLine());
+        c = double.Parse(Console.ReadLine());
+        triangulo = (a * c) / 2.0;
+        circulo = (pi * (c * c));
+        trapezio = (((a + b) * (c)) / 2);
+        cuadrado = (b * b);
+        rectangulo = (a * b);
+        Console.WriteLine("TRIANGULO: " + triangulo.ToString("0.000"));
+        Console.WriteLine("CIRCULO: " + circulo.ToString("0.000"));
+        Console.WriteLine("TRAPEZIO: " + trapezio.ToString("0.000"));
+        Console.WriteLine("QUADRADO: " + cuadrado.ToString("0.000"));
+        Console.WriteLine("RETANGULO: " + rectangulo.ToString("0.000"));
+  
+         //Ejercicio Mayor y menor
+        int valor1,valor2, valor3, valorT, valorM;
+
+        string[] cadena1 = Console.ReadLine().Split(' ');
+        valor1 = int.Parse(cadena1[0]);
+        valor2 = int.Parse(cadena1[1]);
+        valor3 = int.Parse(cadena1[2]);
+        valorT = (((valor1+ valor2)+ Math.Abs(valor1-valor2))/2);
+        valorM = (((valorT + valor3) + Math.Abs(valorT - valor3)) / 2);
+
+
+        Console.WriteLine(valorM+" eh o maior");
+
+
+
+         */
+        //ejercicio 
+        int x = 0;
+        double y,gasto = 0;
+        x=int.Parse(Console.ReadLine());
+        y=double.Parse(Console.ReadLine());
+        gasto=(x/y);
+
+        Console.WriteLine(gasto.ToString("0.000 ")+" km/l");
+
+
+      
+
+
+
+
 
 
 
